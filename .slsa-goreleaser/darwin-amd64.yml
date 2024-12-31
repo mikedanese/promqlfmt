@@ -1,0 +1,12 @@
+# Version for this file.
+version: 1
+
+goos: darwin
+goarch: amd64
+
+env:
+  - CGO_ENABLED=0
+flags:
+  - -trimpath
+
+binary: promqlfmt-{{ .Os }}-{{ .Arch }}
